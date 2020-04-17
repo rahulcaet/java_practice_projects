@@ -1,6 +1,6 @@
 package com.company;
 
-public class operators {
+public class Operators {
     public static void main(String[] args) {
         int myVar = 1+3;
         System.out.println("myVar is: "+myVar); // this is one liner comment
