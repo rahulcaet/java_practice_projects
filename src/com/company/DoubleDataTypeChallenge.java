@@ -1,6 +1,6 @@
 package com.company;
 
-public class doubleDataTypeChallenge {
+public class DoubleDataTypeChallenge {
     public static void main(String[] args) {
         double poundVal = 4.5;
         double kiloVal  = 0.45359237*poundVal;
