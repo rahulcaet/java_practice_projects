@@ -1,6 +1,6 @@
 package com.company;
 
-public class keywordsAndExpressions {
+public class KeywordsAndExpressions {
     public static void main(String[] args) {
         double kilometers = (100 * 1.689344);
         int highScore = 50;
