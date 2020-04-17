@@ -36,9 +36,9 @@ public class Methods {
     public static int calculateHighScorePosition(int highScore) {
         if (highScore >= 1000) {
             return 1;
-        } else if (highScore >= 500 && highScore < 1000) {
+        } else if (highScore >= 500 ) {
             return 2;
-        } else if (highScore >= 100 && highScore < 500) {
+        } else if (highScore >= 100 ) {
             return 3;
         } else{
             return 4;
