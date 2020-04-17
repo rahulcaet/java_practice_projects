@@ -1,6 +1,6 @@
 package com.company;
 
-public class ifthenstmt {
+public class Ifthenstmt {
     public static void main(String[] args) {
         boolean myVar = false;
         if (myVar == true) {
