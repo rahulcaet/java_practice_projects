@@ -52,14 +52,36 @@ public class Main {
 //		Point point = new Point();
 //		System.out.println("distance()= " + point.distance());
 
-		Carpet carpet = new Carpet(3.5);
-		Floor  floor  = new Floor(2.75, 4.0);
-		Calculator calculator = new Calculator(floor, carpet);
+//		Carpet carpet = new Carpet(3.5);
+//		Floor  floor  = new Floor(2.75, 4.0);
+//		Calculator calculator = new Calculator(floor, carpet);
+//
+//		System.out.println("total= " + calculator.getTotalCost());
+//		carpet = new Carpet(1.5);
+//		floor  =  new Floor(5.4, 4.5);
+//		calculator = new Calculator(floor, carpet);
+//		System.out.println("total= " + calculator.getTotalCost());
 
-		System.out.println("total= " + calculator.getTotalCost());
-		carpet = new Carpet(1.5);
-		floor  =  new Floor(5.4, 4.5);
-		calculator = new Calculator(floor, carpet);
-		System.out.println("total= " + calculator.getTotalCost());
+		Bank bank= new Bank("Union Bank of India");
+		bank.addBranch("Geeta Vatika", "Shahpur, Gorakhpur, Near Cancer Hospital");
+		bank.addCustomer( "Geeta Vatika", "Shahpur, Gorakhpur, Near Cancer Hospital",
+				            "Rahul Verma", "Late Ram Naresh" ,
+				          "30071985", "273006", 50);
+
+		bank.addCustomerTransaction("Geeta Vatika", "Shahpur, Gorakhpur, Near Cancer Hospital",
+				"Rahul Verma", "Late Ram Naresh" ,
+				"30071985", "273006", 120);
+
+		bank.queryBranch("Geeta Vatika", "Shahpur, Gorakhpur, Near Cancer Hospital");
+		boolean retVal = bank.addCustomer( "Geeta Vatikwa", "Shahpur, Gorakhpur, Near Cancer Hospital",
+				"Rahul Verma", "Late Ram Naresh" ,
+				"30071985", "273006", 50);
+		System.out.println("Return value is: " + retVal);
+
+		boolean secondRetVal = bank.addBranch("Geeta Vatika", "Shahpur, Gorakhpur, Near Cancer Hospital");
+
+		System.out.println("Return value is: " + secondRetVal);
+
+
 	}
 }
